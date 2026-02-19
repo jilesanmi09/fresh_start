@@ -2,55 +2,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Immigration Policy Overview</title>
+    <title>CI/CD Demo - Immigration Policy</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-            background-color: #f4f4f4;
-        }
-        .container {
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        h1 {
-            color: #333366;
-        }
-        footer {
-            margin-top: 20px;
-            font-size: 12px;
-            color: gray;
-        }
+        body { font-family: Arial; margin: 40px; background: #f2f2f2; }
+        .box { background: white; padding: 25px; border-radius: 8px; }
+        h1 { color: darkblue; }
+        .build { color: green; font-weight: bold; }
     </style>
 </head>
 <body>
-<div class="container">
-    <h1>Immigration Policy Overview</h1>
+<div class="box">
+    <h1>CI/CD Demo Project</h1>
 
     <p>
-        During the Trump administration (2017–2021), immigration policy focused on
-        border security, enforcement, and changes to visa and asylum procedures.
+        This application demonstrates a simple CI/CD pipeline using:
     </p>
 
     <ul>
-        <li>Expansion of border wall construction</li>
-        <li>Travel restrictions affecting certain countries</li>
-        <li>Changes to asylum eligibility rules</li>
-        <li>Increased immigration enforcement measures</li>
+        <li>GitHub</li>
+        <li>Jenkins</li>
+        <li>Maven</li>
+        <li>Tomcat</li>
     </ul>
 
     <p>
-        Immigration policy has continued to evolve across different administrations,
-        reflecting changes in national priorities and legislative decisions.
+        Current Server Time:
+        <strong><%= new java.util.Date() %></strong>
     </p>
 
-    <hr>
-
-    <footer>
-        Page generated on: <%= new java.util.Date() %>
-    </footer>
+    <p class="build">
+        Build triggered automatically from GitHub push.
+    </p>
 </div>
 </body>
 </html>
