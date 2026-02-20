@@ -4,4 +4,4 @@ install webhooks
 still trying
 still onfiguring
 
-install SonarQube
+install SonarQube.
