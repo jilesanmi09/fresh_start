@@ -6,3 +6,4 @@ still onfiguring
 
 install Sonar
 solved sonar error
+freestyle
